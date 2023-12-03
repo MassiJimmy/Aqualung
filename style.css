@@ -1,0 +1,673 @@
+:root
+{
+    --black: #1D1E20;
+    --hoverblack: #3b3b3b;
+    --white: #fdfdfd;
+    --blue: #042CFF;
+    --grey: #F2F2F2;
+    --hovergrey: #d6d6d6;
+}
+
+*
+{
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+body
+{
+    margin: 0;
+}
+
+h1,h2,h3,p
+{
+    margin: 0 10px;
+}
+
+
+/*version desktop*/
+
+.guide
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 825px;
+}
+
+.guideinfo
+{
+    background-color: var(--black);
+    color: var(--white);
+    width: 54%;
+}
+
+.mask
+{
+    width: 46%;
+}
+
+.blue 
+{
+    background-color: var(--blue);
+    width: fit-content;
+    font-size: 1.2em;
+    padding:4px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.RollList
+{
+    margin-top: 150px;
+    width: 380px;
+}
+
+.notblue 
+{
+    position: relative;
+    opacity:0.8;
+    font-size: 1.1em;
+    padding: 5px 2px 0 2px;
+    font-weight: lighter;
+    font-style: italic;
+    
+}
+
+.element
+{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--hoverblack);
+    transition: max-height 0.2s ease-out;
+}
+
+.notblue:hover
+{
+    background-color: var(--hoverblack);
+    cursor: pointer;
+}
+
+
+.notblue i
+{
+    position: absolute;
+    right: 0;
+}
+
+
+
+.TextElement
+{
+    width: 70%;
+    margin: 10% 15%
+}
+
+.TextElement h1
+{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 4.5em;
+}
+
+.TextElement p
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.whitebackground
+{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: var(--white);
+}
+
+.WhyAndHow
+{
+    background-color: var(--white);
+    color: var(--black);
+    width: 96%;
+    position: absolute;
+    right: 0;
+    top:100px;
+    height: 700px;
+}
+
+.FirstArrow
+{
+    margin: 50px 0 0 150px ;
+}
+
+.SecondArrow
+{
+    right:38%;
+    width: 240px;
+    position: absolute;
+}
+
+.SecondTextElement
+{
+    position: absolute;
+    overflow: hidden;
+    width: 25%;
+    background-color: var(--white);
+}
+
+.SecondTextElement h2
+{
+    font-weight: 800;
+    margin-top:25px;
+    margin-bottom: 32px;
+    font-size: 1.9em;
+    letter-spacing: -2px;
+}
+
+.SecondTextElement p
+{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-size: 1.15em;
+    opacity: 0.65;
+}
+
+.move
+{
+    position: absolute;
+    right:370px;
+}
+
+.TopTittle
+{
+    margin: 100px 0 1px 70px;
+    font-size: 1.4em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.TheThree
+{
+    margin: 1px 0 0 70px;
+    font-size: 3.7em;
+    font-weight: 900;
+}
+
+.sup
+{
+    font-size: 4.5em;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--blue);
+    color: var(--white);
+    padding-left: 70px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.containzero
+{
+    width:50%;
+}
+
+.containone
+{
+    width:92.4%;
+}
+
+.containtwo
+{
+    width:66.4%;
+}
+
+.flex-container > div 
+{
+    background-color: var(--black);
+    width:100%;
+    height: 600px;
+    border-right: 1px solid var(--white);
+}
+
+
+
+.container .material-icons
+{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+.container h1
+{
+    font-size: 18px;
+    width: 90%;
+    margin: 5px 5% 20px 5%; 
+    height: 100px;
+}
+
+.container i
+{
+    font-weight:lighter;
+}
+
+.container p
+{
+    width: 85%;
+    margin: 20px 10% 50px 5%; 
+    font-size: 18px;
+    height: 300px
+}
+
+.container h2
+{
+    width: 86%;
+    margin: 20px 7% 10px 7%;
+    border: 1px solid var(--white);
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 1px;
+}
+
+.container h2:hover
+{
+    cursor: pointer;
+    background-color: var(--hoverblack);
+}
+
+.forGear
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.special
+{
+    background-color: var(--grey);
+    color: var(--black);
+    height: fit-content;
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.special h1
+{
+    font-size:50px;
+    font-weight: 900;
+    text-align: center;
+    width: auto;
+    margin: 50px 10%;
+}
+
+.special h2
+{
+    
+    width: 50%;
+    margin: 30px auto;
+    padding: 15px auto;
+    border: 1px solid var(--black);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.special h2:hover
+{
+    cursor: pointer;
+    background-color: var(--hovergrey);
+}
+
+@media only screen and (max-width: 1000px) 
+{
+    /*version tablette*/
+
+    .whitebackground
+    {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background-color: var(--white);
+    }
+    .WhyAndHow
+    {
+        background-color: var(--white);
+        color: var(--black);
+        width: 96%;
+        position: absolute;
+        right: 0;
+        top:100px;
+        height: 800px;
+    }
+    .FirstArrow
+    {
+        margin: 50px 0 0 50px ;
+    }
+
+    .SecondArrow
+    {
+        left:050px;
+        top:500px;
+        width:150px;
+    }
+
+    .SecondTextElement
+    {
+        position: absolute;
+        overflow: hidden;
+        width: 75%;
+        background-color: var(--white);
+    }
+
+    .SecondTextElement h2
+    {
+        font-weight: 800;
+        margin-top:25px;
+        margin-bottom: 32px;
+        font-size: 1.9em;
+        letter-spacing: -2px;
+    }
+
+    .SecondTextElement p
+    {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        font-size: 1.15em;
+        opacity: 0.65;
+    }
+
+    .move
+    {
+        position: absolute;
+        right:150px;
+        top:500px;
+    }
+
+    .containzero
+    {
+        width: fit-content;
+    }
+    .containone
+    {
+        width: fit-content;
+    }
+    .containtwo
+    {
+        width: fit-content;
+
+    }
+
+    .forGear
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .special
+    {
+        background-color: var(--grey);
+        color: var(--black);
+        height: fit-content;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 650px) 
+{
+    /*version mobile*/
+
+    .guide
+    {
+        display: contents;
+        height: fit-content;
+    }
+
+    .guideinfo
+    {
+        background-color: var(--black);
+        color: var(--white);
+        width: 100%;
+        padding: 50px 0;
+    }
+    .blue 
+    {
+        
+        background-color: var(--blue);
+        width: fit-content;
+        font-size: 1.2em;
+        padding:4px;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    .RollList
+    {
+        margin-top: 50px;
+        width: auto;
+        margin: auto;
+    }
+
+    .RollList
+    {
+        
+        width: auto;
+        margin: 50px auto;
+    }
+
+    .mask
+    {
+        width: 100%;
+    }
+
+    .TextElement
+    {
+        width: auto;
+        margin: 0 5%;
+    }
+
+    .whitebackground
+    {
+        width: 100%;
+        background-color: var(--white);
+        position: initial;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+
+    .WhyAndHow
+    {
+        background-color: var(--white);
+        color: var(--black);
+        width: 100%;
+        position: initial;
+       
+    }
+    .FirstArrow
+    {
+        width: 2%;
+        margin: 0;
+    }
+
+    .SecondArrow
+    {
+        margin: 0;
+        width: 2%;
+    }
+
+    .SecondTextElement
+    {
+        overflow: none;
+        position: initial;
+        width: 96%;
+        margin-left:2%;
+        background-color: var(--white);
+    }
+
+    .SecondTextElement h2
+    {
+        font-weight: 800;
+        margin-top:25px;
+        margin-bottom: 32px;
+        font-size: 1.9em;
+        letter-spacing: -2px;
+    }
+
+    .SecondTextElement p
+    {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        font-size: 1.15em;
+        opacity: 0.65;
+    }
+
+    .move
+    {
+       position: initial;
+    }
+
+    .TopTittle
+    {
+        margin: 50px 0 1px 70px;
+        font-size: 1.4em;
+        font-style: italic;
+        opacity: 0.8;
+    }
+
+    .TheThree
+    {
+        margin: 1px 0 0 70px;
+        font-size: 3.2em;
+        font-weight: 900;
+    }
+
+    .sup
+    {
+        font-size: 3.7em;
+    }
+
+    .flex-container
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: var(--blue);
+        color: var(--white);
+        padding-top: 70px;
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
+
+    .flex-container > div 
+    {
+        background-color: var(--black);
+        width:100%;
+        height: 400px;
+        border-bottom: 1px solid var(--white);
+    }
+
+
+
+    .container .material-icons
+    {
+        width: 100%;
+        margin: 20px 0;
+        font-size: 38px;
+        text-align: center;
+    }
+
+
+    .container h1
+    {
+        font-size: 18px;
+        width: 90%;
+        margin: 5px 5%; 
+        height: 60px;
+    }
+
+    .container i
+    {
+        font-weight:lighter;
+    }
+
+    .container p
+    {
+        width: 85%;
+        margin: 20px 10% 30px 5%; 
+        font-size: 18px;
+        height: 130px
+    }
+
+    .container h2
+    {
+        width: 86%;
+        margin: 10px 7%;
+        border: 1px solid var(--white);
+        text-align: center;
+        font-size: 18px;
+        padding: 2px 1px;
+    }
+
+    .container h2:hover
+    {
+        cursor: pointer;
+        background-color: var(--hoverblack);
+    }
+
+    .forGear
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .special
+    {
+        background-color: var(--grey);
+        color: var(--black);
+        height: 400px;
+        border-radius: 10px;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .special h1
+    {
+        font-size:50px;
+        font-weight: 900;
+        text-align: center;
+        width: auto;
+        margin: 50px 10%;
+    }
+
+    .special h2
+    {
+        
+        margin: 20px 25%;
+        border: 1px solid var(--black);
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .special h2:hover
+    {
+        cursor: pointer;
+        background-color: var(--hovergrey);
+    }
+
+}
